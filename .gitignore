@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -59,3 +60,7 @@ dkms.conf
 venv/
 
 build*
+=======
+build
+.vscode
+>>>>>>> 6df21af9cecf5bf3c546234122cd02763c1cc341

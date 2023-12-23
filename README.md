@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OBC Firmware Onboarding Challenge
 
 Welcome to Orbital's OBC Firmware Onboarding Challenge! Please visit [this Notion doc](https://www.notion.so/uworbital/Firmware-Onboarding-Challenge-Updated-24340dfccb0547a5a7246ce6d7207c28) for the challenge instructions. Remember to follow our style guide which is written below.
@@ -64,3 +65,34 @@ Some of these rules don't apply in certain cases. Use your better judgement. To 
 8. Compile with all possible warnings active; all warnings should then be addressed before release of the software.
 9. Use the preprocessor sparingly
 10. Restrict functions to a single printed page
+=======
+# C Programming Challenge - Level 1
+
+This mini-challenge is intended to test your knowledge of C programming. There are 13 C programming questions that can be found in the `challenge.c` file. Your solution to this challenge will be verified automatically on a standard Linux machine once you make a pull request.
+
+To test your solutions locally, you can use the provided Dockerfile to build a Docker image that will run the tests for you.
+
+If you do not have Docker installed on your machine, you can follow the instructions <a href="https://www.notion.so/uworbital/How-To-Docker">here</a>.
+ 
+To build the Docker image, run:
+```
+docker build -t fw-onboarding-level1 .
+```
+
+You can then run the container with:
+```
+docker run -it --rm -v $(pwd):/app fw-onboarding-level1 /bin/bash
+```
+
+This will open a bash shell inside the container. From there, you can begin working on the challenge. You can stay in the container as long as you want, and you can exit the container by typing `exit`.
+In order to test your solutions, you'll need to compile the challenge.c file. You can do this by running the following commands in the bash shell:
+```
+make clean
+make all
+./build/challenge
+```
+This will use the provided Makefile to compile the `challenge.c` file and run the resulting executable.
+
+If you've answered all the questions correctly, you'll pass all the test cases. There should be zero build errors/warnings.
+
+>>>>>>> 6df21af9cecf5bf3c546234122cd02763c1cc341
